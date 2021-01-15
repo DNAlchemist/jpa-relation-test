@@ -2,13 +2,13 @@ package one.chest.jparelationtest.domain.mother;
 
 import one.chest.jparelationtest.domain.Person;
 
-import java.util.List;
+import java.util.Set;
 
 public class PersonMother {
 
     public static Person personNullId() {
         Person person = new Person();
-        person.setPhones(List.of(PhoneMother.phoneNullId()));
+        person.setPhones(Set.of(PhoneMother.phoneNullId()));
         return person;
     }
 }

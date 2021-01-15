@@ -20,6 +20,7 @@ public class Phone {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "person_id")
     private Person person;
 
     @Column(name = "phone")

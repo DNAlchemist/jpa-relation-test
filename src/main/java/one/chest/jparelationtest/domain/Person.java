@@ -3,7 +3,7 @@ package one.chest.jparelationtest.domain;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.Set;
 
 @Data
 @Entity
@@ -14,7 +14,7 @@ public class Person {
     @Column(name = "id")
     private Long id;
 
-    @PrimaryKeyJoinColumn
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
-    private List<Phone> phones;
+    private Set<Phone> phones;
+
 }
