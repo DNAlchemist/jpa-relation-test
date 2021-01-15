@@ -19,7 +19,7 @@ public class Phone {
     @Column(name = "id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     private Person person;
 
     @Column(name = "phone")
