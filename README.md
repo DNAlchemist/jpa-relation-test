@@ -11,3 +11,4 @@ Entity relation is not saving correctly: foreign key (phone.person_id) is not sa
 #### Running application
 
     ./gradlew -xtest build && docker-compose up --build
+    curl localhost:8080/save
