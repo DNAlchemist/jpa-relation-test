@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: jpa-relation-test
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres:5432/postgres?prepareThreshold=0
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        default_schema: postgres
+  flyway:
+    schemas: postgres
+    default-schema: postgres
