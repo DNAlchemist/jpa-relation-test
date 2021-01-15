@@ -2,7 +2,7 @@
 
 Entity relation is not saving correctly: foreign key (phone.person_id) is not saved
 
-### How to reproduce
+### How to reproduce (Docker required)
 
 #### JUnit Test
 
