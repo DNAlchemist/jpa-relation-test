@@ -12,6 +12,7 @@ import static javax.persistence.ConstraintMode.CONSTRAINT;
 @Data
 @Entity
 @Table(name = "phone")
+@EqualsAndHashCode(of = "id")
 public class Phone {
 
     @Id
